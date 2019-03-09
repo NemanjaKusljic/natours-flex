@@ -1,0 +1,27 @@
+
+
+/// SECTION TOURS /////
+
+.section__tours{
+    display:flex;
+    justify-content: space-around;
+
+    &__text{
+        flex: 1;
+    }
+
+    &__images{
+        flex: 1;
+    }
+}
+
+///// SECTION FEATURES /////@at-root
+
+.section-features{
+    display:flex;
+    justify-content: space-between;
+    .feature-box{
+        flex:1;
+        margin:0.3rem;
+    }
+}
