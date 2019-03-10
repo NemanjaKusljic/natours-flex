@@ -1,5 +1,5 @@
 .btn{
-
+    &, //this means include btn class also
     &:link,
     &-visited{
     text-transform: uppercase;
@@ -9,6 +9,9 @@
     border-radius: 100px;
     transition:all .2s;
     position:relative;
+
+    border:none;
+    cursor:pointer;
     
     }
 
@@ -21,7 +24,8 @@
             opacity: 0;
         }
     }
-    &:active{
+    &:active,
+    &:focus {
     transform:translateY(-1px);
     box-shadow: 0 5px 5px rgba($color-black, 0.2);
     }
